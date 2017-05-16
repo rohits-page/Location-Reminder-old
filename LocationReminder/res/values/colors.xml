@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- This file contains resource definitions for solid colors.  In
+     addition to plain color resources (retrieved via Resources.getColor()
+     and friends), we are also using it to define drawables that are
+     a solid color.
+-->
+
+<resources>
+    <!-- Retrieved via Resources.getColor() and friends. -->
+	<color name ="Alice_Blue">#f0f8ff</color>
+	<color name ="Antique_White">#faebd7</color>
+	<color name ="Antique_White_2">#eedfcc</color>
+	<color name ="Antique_White_3">#cdc0b0</color>
+	<color name ="Antique_White_4">#8b8378</color>
+	<color name ="Aquamarine">#7fffd4</color>
+	<color name ="Azure">#f0ffff</color>
+	<color name ="Beige">#f5f5dc</color>
+	<color name ="Bisque">#ffe4c4</color>
+	<color name ="Bisque_2">#eed5b7</color>
+	<color name ="Bisque_3">#cdb79e</color>
+	<color name ="Bisque_4">#8b7d6b</color>
+	<color name ="Black">#000000</color>
+	<color name ="Blanched_Almond">#ffebcd</color>
+	<color name ="Blue">#0000ff</color>
+	<color name ="Blue_Violet">#8a2be2</color>
+	<color name ="Brown">#a52a2a</color>
+	<color name ="Burlywood">#deb887</color>
+	<color name ="Cadet_Blue">#5f9ea0</color>
+	<color name ="Chartreuse">#7fff00</color>
+	<color name ="Chocolate">#d2691e</color>
+	<color name ="Coral">#ff7f50</color>
+	<color name ="Cornflower_Blue">#6495ed</color>
+	<color name ="Cornsilk">#fff8dc</color>
+	<color name ="Cornsilk_2">#eee8dc</color>
+	<color name ="Cornsilk_3">#cdc8b1</color>
+	<color name ="Cornsilk_4">#8b8878</color>
+	<color name ="Cyan">#00ffff</color>
+	<color name ="Dark_Goldenrod">#b8860b</color>
+	<color name ="Dark_Green">#006400</color>
+	<color name ="Dark_Khaki">#bdb76b</color>
+	<color name ="Dark_Olive_Green">#556b2f</color>
+	<color name ="Dark_Orange">#ff8c00</color>
+	<color name ="Dark_Orchid">#9932cc</color>
+	<color name ="Dark_Salmon">#e9967a</color>
+	<color name ="Dark_Sea_Green">#8fbc8f</color>
+	<color name ="Dark_Slate_Blue">#483d8b</color>
+	<color name ="Dark_Slate_Gray">#2f4f4f</color>
+	<color name ="Dark_Turquoise">#00ced1</color>
+	<color name ="Dark_Violet">#9400d3</color>
+	<color name ="Deep_Pink">#ff1493</color>
+	<color name ="Deep_Sky_Blue">#00bfff</color>
+	<color name ="Dim_Gray">#696969</color>
+	<color name ="Dodger_Blue">#1e90ff</color>
+	<color name ="Firebrick">#b22222</color>
+	<color name ="Floral_White">#fffaf0</color>
+	<color name ="Forest_Green">#228b22</color>
+	<color name ="Gainsboro">#0dccdc</color>
+	<color name ="Ghost_White">#f8f8ff</color>
+	<color name ="Gold">#ffd700</color>
+	<color name ="Goldenrod">#daa520</color>
+	<color name ="Gray">#bebebe</color>
+	<color name ="Green_Yellow">#adff2f</color>
+	<color name ="Honeydew">#f0fff0</color>
+	<color name ="Honeydew_2">#e0eee0</color>
+	<color name ="Honeydew_3">#c1cdc1</color>
+	<color name ="Honeydew_4">#838b83</color>
+	<color name ="Hot_Pink">#ff69b4</color>
+	<color name ="Indian_Red">#cd5c5c</color>
+	<color name ="Ivory">#fffff0</color>
+	<color name ="Ivory_2">#eeeee0</color>
+	<color name ="Ivory_3">#cdcdc1</color>
+	<color name ="Ivory_4">#8b8b83</color>
+	<color name ="Khaki">#f0e68c</color>
+	<color name ="Lavender">#e6e6fa</color>
+	<color name ="Lavender_Blush">#fff0f5</color>
+	<color name ="Lawn_Green">#7cfc00</color>
+	<color name ="Lemon_Chiffon">#fffacd</color>
+	<color name ="Light_Blue">#add8e6</color>
+	<color name ="Light_Coral">#f08080</color>
+	<color name ="Light_Cyan">#e0ffff</color>
+	<color name ="Light_Goldenrod">#eedd82</color>
+	<color name ="Light_Goldenrod_Yellow">#fafad2</color>
+	<color name ="Light_Gray">#d3d3d3</color>
+	<color name ="Light_Pink">#ffb6c1</color>
+	<color name ="Light_Salmon">#ffa07a</color>
+	<color name ="Light_Sea_Green">#20b2aa</color>
+	<color name ="Light_Sky_Blue">#87cefa</color>
+	<color name ="Light_Slate_Blue">#8470ff</color>
+	<color name ="Light_Slate_Gray">#778899</color>
+	<color name ="Light_Steel_Blue">#b0c4de</color>
+	<color name ="Light_Yellow">#ffffe0</color>
+	<color name ="Lime_Green">#32cd32</color>
+	<color name ="Linen">#faf0e6</color>
+	<color name ="Maroon">#b03060</color>
+	<color name ="Medium_Aquamarine">#66cdaa</color>
+	<color name ="Medium_Blue">#0000cd</color>
+	<color name ="Medium_Orchid">#ba55d3</color>
+	<color name ="Medium_Purple">#9370db</color>
+	<color name ="Medium_Sea_Green">#3cb371</color>
+	<color name ="Medium_Slate_Blue">#7b68ee</color>
+	<color name ="Medium_Spring_Green">#00fa9a</color>
+	<color name ="Medium_Turquoise">#48d1cc</color>
+	<color name ="Medium_Violet_Red">#c71585</color>
+	<color name ="Midnight_Blue">#191970</color>
+	<color name ="Mint_Cream">#f5fffa</color>
+	<color name ="Misty_Rose">#ffe4e1</color>
+	<color name ="Moccasin">#ffe4b5</color>
+	<color name ="Navajo_White">#ffdead</color>
+	<color name ="Navy">#000080</color>
+	<color name ="Old_Lace">#fdf5e6</color>
+	<color name ="Olive_Drab">#6b8e23</color>
+	<color name ="Orange">#ffa500</color>
+	<color name ="Orange_Red">#ff4500</color>
+	<color name ="Orchid">#da70d6</color>
+	<color name ="Pale_Goldenrod">#eee8aa</color>
+	<color name ="Pale_Green">#98fb98</color>
+	<color name ="Pale_Turquoise">#afeeee</color>
+	<color name ="Pale_Violet_Red">#db7093</color>
+	<color name ="Papaya_Whip">#ffefd5</color>
+	<color name ="Peach_Puff">#ffdab9</color>
+	<color name ="Peach_Puff_2">#eecbad</color>
+	<color name ="Peach_Puff_3">#cdaf95</color>
+	<color name ="Peach_Puff_4">#8b7765</color>
+	<color name ="Peru">#cd853f</color>
+	<color name ="Pink">#ffc0cb</color>
+	<color name ="Plum">#dda0dd</color>
+	<color name ="Powder_Blue">#b0e0e6</color>
+	<color name ="Purple">#a020f0</color>
+	<color name ="Red">#ff0000</color>
+	<color name ="Rosy_Brown">#bc8f8f</color>
+	<color name ="Royal_Blue">#041690</color>
+	<color name ="Saddle_Brown">#8b4513</color>
+	<color name ="Salmon">#fa8072</color>
+	<color name ="Sandy_Brown">#f4a460</color>
+	<color name ="Sea_Green">#2e8b57</color>
+	<color name ="Seashell">#fff5ee</color>
+	<color name ="Seashell_2">#eee5de</color>
+	<color name ="Seashell_3">#cdc5bf</color>
+	<color name ="Seashell_4">#8b8682</color>
+	<color name ="Sienna">#a0522d</color>
+	<color name ="Sky_Blue">#87ceeb</color>
+	<color name ="Slate_Blue">#6a5acd</color>
+	<color name ="Slate_Gray">#708090</color>
+	<color name ="Snow">#fffafa</color>
+	<color name ="Snow_2">#eee9e9</color>
+	<color name ="Snow_3">#cdc9c9</color>
+	<color name ="Snow_4">#8b8989</color>
+	<color name ="Spring_Green">#00ff7f</color>
+	<color name ="Steel_Blue">#4682b4</color>
+	<color name ="Tan">#d2b48c</color>
+	<color name ="Thistle">#d8bfd8</color>
+	<color name ="Tomato">#ff6347</color>
+	<color name="transparent">#00000000</color>
+	<color name ="Turquoise">#40e0d0</color>
+	<color name ="Violet">#ee82ee</color>
+	<color name ="Violet_Red">#d02090</color>
+	<color name ="Wheat">#f5deb3</color>
+	<color name ="White">#ffffff</color>
+	<color name ="White_Smoke">#f5f5f5</color>
+	<color name ="Yellow">#ffff00</color>
+	<color name ="Yellow_Green">#9acd32</color>
+    <!-- Retrieved via Resources.getDrawable() and friends. -->
+    <drawable name="semi_black">#80000000</drawable>
+<color name="LIGHT_BLACK">#1F1F1F</color>
+</resources>

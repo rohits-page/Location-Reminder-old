@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="MSG_HelpWarning">It can take some time to load the Help file.</string>
+    <string name="MSG_Help_UnknownError">Unknown error occurred while loading the Help file from assets.\nPlease go back to main screen and try again.\nI apologize for the inconvenience.</string>
+    <string name="MSG_Help_KnownError">Error occurred while accessing the help file.\n</string>
+    <string name="MSG_Help_StdError">Unable to display help content.\nPlease check if your SD card is properly mounted and available to the device.\nIf you are plugged into your computer or laptop via USB, unplug it.\nWhen the condition is fixed, go back to main screen and retry.</string>
+    <string name="MSG_Help_DamagedContent">Help file was damaged. Please go back to main screen and re-launch the HELP option.\nI apologize for the inconvenience.</string>
+    <string name="MSG_HelpDamagedBeyondRepair">Help file is damaged beyond repair. Please follow the steps below to fix it:\na. Plug in your device into a laptop or computer.\nb. Mount it when prompted.\nc. Navigate to root folder.\nd. Delete file.\ne. Unplug the device.\nf. Relaunch the HELP option from main screen.\nI apologize for the inconvenience.</string>
+    <string name="MSG_HelpContentNotFound">Unable to find the Help content. Please try again.\nTry re-mounting your SD card and restarting your device.</string>
+    <string name="MSG_TitleUnsupportedOperation">Unsupported Operation</string>
+    <string name="MSG_UnsupportedRecurringReminder">Free version only supports One Time Alerts.</string>
+    <string name="MSG_UnsupportedReminder">Reminder was not created.\nYou have reached the limit on maximum number of Reminders you can create using the FREE version of this APP.</string>
+    <string name="MSG_DuplicateReminder">Reminder for the same location already exists. What would you like to do?</string>
+    <string name="MSG_InvalidReminder_1">Please enter a valid Reminder Name.</string>
+    <string name="MSG_NoReminder">Sorry, but no reminders were found.</string>
+    <string name="MSG_UnableToCreateReminder">Unable to create Reminder.</string>
+    <string name="MSG_ReminderNoLongerExists">The reminder you are trying to access no longer exists.\nIt is possible that it was a one time reminder and was purged after notification.</string>
+    <string name="MSG_ReminderUpdated">Reminder was updated externally.</string>
+    <string name="MSG_MultipleAddress">Multiple matching addresses found.</string>
+    <string name="MSG_AddressNotFound">Address could not be located on Map. Please select another point of interest on the map or enter another address.</string>
+    <string name="MSG_MyLocationON">Turning ON this feature will try to keep your map centered based on your current location.\nNote that leaving this turned on will increase power consumption and hence not recommended.</string>
+    <string name="MSG_TitleConfirmPurchase">Confirm Purchase</string>
+    <string name="MSG_StdPurchasMessage">Would you like to purchase the Key to unlock the APP?\nIn case you have already purchased it, this operation will simply reinstall it.\nWould you like to proceed?</string>
+    <string name="MSG_ProviderUnavailable">Provider is not currently available</string>
+    <string name="MSG_ProviderDisabled">Your Location providers are disabled, do you want to enable one or more Location providers?</string>
+    <string name="MSG_TapMarker">Tap on the marker to create reminder for selected address.</string>
+    <string name="MSG_ConfirmCreateReminder">You want to create an Reminder for address</string>
+    <string name="MSG_TitleNotification">Location Based Reminder</string>
+    <string name="MSG_ServiceLocationReminderSuccessfulInit">Location Based Reminder successfully initialized...</string>
+    <string name="MSG_UnlockSuccessful">You are now using Full version of the Location Based Reminder APP.</string>
+    <string name="MSG_DeleteReminders">Successfully deleted all user created reminders.</string>
+    <string name="MSG_ReminderInPast">Reminder cannot be set for past.</string>
+    <string name="MSG_ReminderToFromOutOfSequence">The supplied Date-Times for the reminder window are out of sequence. Please try again.</string>
+    <string name="MSG_ReminderNoTimingInfo">No timing information provided.</string>
+    <string name="MSG_ActionConfirmDialogBoxTitle">Confirm Action</string>
+    <string name="MSG_ActionConfirmDialogBoxMsg">Would you like to proceed?</string>
+    <string name="MSG_UnableToDelete">Sorry, unable to delete the reminder.</string>
+    <string name="MSG_ReminderListTip">Tip: to View/Edit/Delete a reminder, select reminder and long press.</string>
+    <string name="MSG_MapViewTip">Tip: Enter address or click on Map.\nPress Menu for more options."</string>
+    <string name="MSG_About">	    
+	    Please rate the application on the Android market.
+	    I look forward to hear from you.
+	    Please send your comments, feedback, suggestions to rohitspage@gmail.com
+	    </string> 
+
+</resources>

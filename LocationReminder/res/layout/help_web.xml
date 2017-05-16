@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/border" >
+
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/innerHeaderArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Light_Gray"
+            android:padding="2dp" 
+            >
+
+            <TextView
+                android:id="@+id/lblMapViewActivityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:clickable="false"
+                android:gravity="left|center"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_help_name"
+                android:textColor="@color/White"
+                android:textSize="25dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/btnExitHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="OK"
+                android:textStyle="bold">
+            </Button>
+        </RelativeLayout>
+
+        <WebView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/innerHeaderArea" />
+    </RelativeLayout>
+
+</RelativeLayout>

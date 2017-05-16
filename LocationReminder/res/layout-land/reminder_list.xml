@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutParent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    android:background="@drawable/border"
+    android:soundEffectsEnabled="true" >
+
+    <RelativeLayout
+        android:id="@+id/layoutReminderComponentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/Light_Gray"
+        android:gravity="center_vertical"
+        android:padding="0px" >
+
+        <RelativeLayout
+            android:id="@+id/headerArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LIGHT_BLACK"
+            android:padding="4px"
+            android:paddingBottom="2px" >
+
+            <RelativeLayout
+                android:id="@+id/innerHeaderArea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Light_Gray"
+                android:padding="2px" >
+
+                <TextView
+                    android:id="@+id/lblManageReminderActivityName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40px"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/activity_reminder_list_name"
+                    android:textColor="@color/White"
+                    android:textSize="20px"
+                    android:textStyle="bold" >
+                </TextView>
+                <Button
+                    android:id="@+id/btnExitReminderListView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="2px"
+                    android:layout_marginTop="2px"
+                    android:gravity="center"
+                    android:text="OK"
+                    android:textStyle="bold" >
+                </Button>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainControls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerArea"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2px"
+            android:background="@color/LIGHT_BLACK"
+            android:padding="4px" >
+
+            <LinearLayout
+                android:id="@+id/list_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:id="@+id/lblColReminderName"
+                    android:layout_width="0px"
+                    android:layout_height="35px"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Reminder Name"
+                    android:textColor="@color/Light_Goldenrod"
+                    android:textSize="20px" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblActivityDetail1"
+                    android:layout_width="0px"
+                    android:layout_height="35px"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Address"
+                    android:textColor="@color/Light_Goldenrod"
+                    android:textSize="20px" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblActivityDetail2"
+                    android:layout_width="0px"
+                    android:layout_height="35px"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Recurrence"
+                    android:textColor="@color/Light_Goldenrod"
+                    android:textSize="20px" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/separator"
+                android:layout_width="fill_parent"
+                android:layout_height="5px"
+                android:layout_below="@id/list_header"
+                android:background="@color/Light_Blue"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/lblHelpTip"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:enabled="false"
+                android:gravity="left|center"
+                android:inputType="textMultiLine"
+                android:background="@color/Light_Gray"
+                android:maxLines="5"
+                android:ellipsize="marquee"
+                android:text="@string/MSG_ReminderListTip"
+                android:textColor="@color/Brown"
+                android:textSize="18px" android:minLines="2" android:layout_height="50px" android:scrollbars="horizontal|vertical"/>
+            
+            <ListView
+                android:id="@+id/listViewReminders"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@id/lblHelpTip"
+                android:layout_below="@id/separator"
+                android:dividerHeight="5px"
+                android:footerDividersEnabled="true"
+                android:hapticFeedbackEnabled="true"
+                android:headerDividersEnabled="true"
+                android:saveEnabled="true" >
+            </ListView>
+        </RelativeLayout>
+        <!-- main_controls -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

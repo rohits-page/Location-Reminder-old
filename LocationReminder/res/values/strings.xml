@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Location Reminder</string>
+<!--     <string name="google_map_key">0di1YhhG4iykrT6ovnQgQYMyEhJpSrtTc_2sD7A</string> -->
+    <string name="google_map_key">0di1YhhG4iykMof50ZqMelW5k8zWgCBI1VwaPeg</string>
+    <!-- Service Names -->
+    <string name="service_notify_reminder">Notify Reminder</string>
+    <string name="service_notify_startup">Notify Startup</string>
+    <string name="service_unlock">Unlock Location Based Reminder</string>
+
+    <!-- Activity Names -->
+    <string name="activity_manage_reminder_name">Manage Reminder</string>
+    <string name="activity_map_name">Location Reminder</string>
+    <string name="activity_reminder_notify_name">Notify</string>
+    <string name="activity_reminder_list_name">Places of Interest</string>
+    <string name="activity_help_name">Location Reminder\nHelp</string>
+    <string name="activity_about_name">Location Reminder V2.0</string>
+
+    <!-- Intent Action names -->
+    <string name="intent_manage_reminder">rcs.LocationReminder.Intent.action.MANAGE_LOCATION_REMINDER</string>
+    <string name="intent_notify_reminder">rcs.LocationReminder.Intent.action.NOTIFY_LOCATION_REMINDER</string>
+    <string name="intent_notify_startup">rcs.LocationReminder.Intent.action.NOTIFY_STARTUP</string>
+    <string name="intent_reminder_list">rcs.LocationReminder.Intent.action.LOCATION_REMINDER_LIST</string>
+    <string name="intent_help">rcs.LocationReminder.Intent.action.HELP_LocationBasedReminder</string>
+    <string name="intent_about">rcs.LocationReminder.Intent.action.ABOUT_LocationBasedReminder</string>
+
+    <array name="listCountryImperialSystem">
+        <item>United States</item>
+        <item>Burma</item>
+        <item>Myanmar</item>
+        <item>Liberia</item>
+    </array>
+
+</resources>

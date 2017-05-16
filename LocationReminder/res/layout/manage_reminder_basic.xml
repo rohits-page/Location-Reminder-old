@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutReminderBasicDetailsScrollContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutReminderBasicDetailsComponentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Light_Gray"
+        android:gravity="center_vertical"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/lblReminderName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtReminderName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lblReminderName"
+            android:layout_below="@id/lblReminderName"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/widget_border"
+            android:gravity="left|center_vertical"
+            android:hint="Enter name of reminder"
+            android:inputType="text"
+            android:saveEnabled="true"
+            android:textColor="@color/Brown"
+            android:textSize="12sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblReminderDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtReminderName"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="Description"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtReminderDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lblReminderName"
+            android:layout_below="@id/lblReminderDescription"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/widget_border"
+            android:ellipsize="end"
+            android:gravity="top|left"
+            android:hint="Enter description for the reminder"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:saveEnabled="true"
+            android:textColor="@color/Brown"
+            android:textSize="12sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtReminderDescription"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="Address"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lblReminderName"
+            android:layout_below="@id/lblAddress"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/widget_border"
+            android:enabled="false"
+            android:gravity="top|left"
+            android:hint="Address"
+            android:inputType="textMultiLine|textPostalAddress"
+            android:maxLines="5"
+            android:minLines="2"
+            android:saveEnabled="true"
+            android:textColor="@color/Brown"
+            android:textSize="12sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblRadius"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtAddress"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="Radius"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtRadius"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lblReminderName"
+            android:layout_below="@id/lblRadius"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/widget_border"
+            android:gravity="left|center_vertical"
+            android:hint="Radii to trigger reminder (Default= 1)"
+            android:inputType="numberDecimal"
+            android:numeric="decimal"
+            android:saveEnabled="true"
+            android:textColor="@color/Brown"
+            android:textSize="12sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblDistanceUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtRadius"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lblRadius"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom|left"
+            android:paddingRight="20dp"
+            android:text="Mi"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/chkOneTimeReminder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lblReminderName"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtRadius"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:checked="true"
+            android:gravity="right|center_vertical"
+            android:saveEnabled="true"
+            android:text="One Time Reminder"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

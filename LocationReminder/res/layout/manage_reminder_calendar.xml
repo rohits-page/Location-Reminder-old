@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutReminderTimingDetailsScrollContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutReminderTimingDetailsComponentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Light_Gray"
+        android:gravity="center_vertical"
+        android:padding="0px" >
+
+        
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/Blue_Violet"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="" />
+        
+        <CheckBox
+            android:id="@+id/chkAddTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/txtMsg"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:saveEnabled="true"
+            android:text="    Remind between time window."
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/chkAddTime"
+            android:text="Remind me between"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutFrom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtFrom"
+            android:layout_marginBottom="5dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnAddDateFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.6"
+                android:text="Day, Mon DD, YYYY" />
+
+            <Button
+                android:id="@+id/btnAddTimeFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="hh:mm AM" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/layoutFrom"
+            android:text="And"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtTo"
+            android:layout_marginBottom="5dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnAddDateTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.6"
+                android:text="Day, Mon DD, YYYY" />
+
+            <Button
+                android:id="@+id/btnAddTimeTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="HH:MM AM" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chkAllDayEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/layoutTo"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:saveEnabled="true"
+            android:text="    All day event"
+            android:textColor="@color/Light_Slate_Gray"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/menuViewReminders" android:alphabeticShortcut="V"
+		android:title="View Reminders" android:titleCondensed="View"
+		android:icon="@drawable/view"
+		android:orderInCategory="1" android:numericShortcut="1"></item>
+	<item android:id="@+id/menuHelp" android:title="Help"
+		android:titleCondensed="Help" android:alphabeticShortcut="H"
+		android:numericShortcut="2" android:icon="@drawable/help"
+		android:orderInCategory="2" />
+	<item android:id="@+id/menuClean" android:title="Clean all Reminders"
+		android:titleCondensed="Clean" android:alphabeticShortcut="C"
+		android:numericShortcut="3" android:icon="@drawable/clean"
+		android:orderInCategory="3" />
+	<item android:id="@+id/menuQuit" android:title="Quit"
+		android:titleCondensed="Quit" android:alphabeticShortcut="Q"
+		android:numericShortcut="4" android:icon="@drawable/stop"
+		android:orderInCategory="4" />
+	<item android:id="@+id/menuAbout" android:title="About"
+		android:titleCondensed="About" android:alphabeticShortcut="A"
+		android:numericShortcut="5" android:icon="@drawable/app_icon"
+		android:orderInCategory="5" />
+
+</menu>

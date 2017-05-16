@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutParent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    android:background="@drawable/border"
+    android:soundEffectsEnabled="true" >
+
+    <RelativeLayout
+        android:id="@+id/layoutReminderComponentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/Light_Gray"
+        android:gravity="center_vertical"
+        android:padding="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/headerArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LIGHT_BLACK"
+            android:padding="4dp"
+            android:paddingBottom="2dp" >
+
+            <RelativeLayout
+                android:id="@+id/innerHeaderArea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Light_Gray"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/lblManageReminderActivityName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="@string/activity_reminder_list_name"
+                    android:textColor="@color/White"
+                    android:textSize="18dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Button
+                    android:id="@+id/btnExitReminderListView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="OK"
+                    android:textStyle="bold" >
+                </Button>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainControls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerArea"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:background="@color/LIGHT_BLACK"
+            android:padding="4dp" >
+
+            <LinearLayout
+                android:id="@+id/list_header"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:id="@+id/lblColReminderName"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Reminder Name"
+                    android:textColor="@color/Light_Goldenrod"
+                    android:textSize="12dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblActivityDetail1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Address"
+                    android:textColor="@color/Light_Goldenrod"
+                    android:textSize="12dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/lblActivityDetail2"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Recurrence"
+                    android:textColor="@color/Light_Goldenrod"
+                    android:textSize="12dp" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/separator"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/list_header"
+                android:background="@color/Light_Blue"
+                android:enabled="false" />
+
+            <ListView
+                android:id="@+id/listViewReminders"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/lblHelpTip"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/separator"
+                android:dividerHeight="5dp"
+                android:footerDividersEnabled="true"
+                android:hapticFeedbackEnabled="true"
+                android:headerDividersEnabled="true"
+                android:saveEnabled="true" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/lblHelpTip"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/Light_Gray"
+                android:ellipsize="marquee"
+                android:enabled="false"
+                android:gravity="left|center"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minLines="2"
+                android:scrollbars="horizontal|vertical"
+                android:text="@string/MSG_ReminderListTip"
+                android:textColor="@color/Brown"
+                android:textSize="12dp" />
+        </RelativeLayout>
+        <!-- main_controls -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

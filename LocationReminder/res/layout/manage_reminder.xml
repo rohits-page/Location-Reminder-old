@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutScrollContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    android:background="@drawable/border"
+    android:soundEffectsEnabled="true" >
+
+    <RelativeLayout
+        android:id="@+id/layoutReminderComponentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Light_Gray"
+        android:gravity="center_vertical"
+        android:padding="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/headerArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LIGHT_BLACK"
+            android:padding="4dp"
+            android:paddingBottom="2dp" >
+
+            <RelativeLayout
+                android:id="@+id/innerHeaderArea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Light_Gray"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/lblManageReminderActivityName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="@string/activity_manage_reminder_name"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:textStyle="bold" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerArea"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:background="@color/LIGHT_BLACK"
+            android:padding="4dp" >
+
+            <RelativeLayout
+                android:id="@+id/box1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@id/headerArea"
+                android:layout_below="@id/headerArea"
+                android:layout_gravity="center"
+                android:background="@color/Light_Gray"
+                android:padding="2dp" >
+
+                <TabHost
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@android:id/tabhost"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:background="@drawable/border"
+                    android:soundEffectsEnabled="true" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+
+                            <LinearLayout
+                                android:id="@+id/layout_tab_basic_details"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center" 
+                                android:background="@drawable/tab_bg"
+                                >
+                                <include layout="@layout/manage_reminder_basic" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_tab_time_details"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center" 
+                                android:background="@drawable/tab_bg"
+                                >
+                                <include layout="@layout/manage_reminder_calendar" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </TabHost>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/save_button_ring"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/box1"
+                android:layout_alignRight="@id/box1"
+                android:layout_below="@id/box1"
+                android:layout_gravity="center"
+                android:background="@color/Light_Gray"
+                android:padding="2dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <Button
+                            android:id="@+id/btnAction1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:background="@color/White"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Button1"
+                            android:textColor="@color/Dark_Slate_Gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <Button
+                            android:id="@+id/btnAction2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:background="@color/White"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Button2"
+                            android:textColor="@color/Dark_Slate_Gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp" >
+
+                        <Button
+                            android:id="@+id/btnAction3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:background="@color/White"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Button3"
+                            android:textColor="@color/Dark_Slate_Gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" >
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- save_button_ring -->
+        </RelativeLayout>
+        <!-- main_controls -->
+    </RelativeLayout>
+
+</ScrollView>

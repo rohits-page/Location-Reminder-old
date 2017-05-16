@@ -1,0 +1,16 @@
+<com.google.android.maps.MapView
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:apiKey="0di1YhhG4iykrT6ovnQgQYMyEhJpSrtTc_2sD7A"
+                 />
+
+for the keystore with MD5 fingerprint: E1:82:95:5F:3C:92:F6:A7:72:8C:31:D1:95:85:4A:C7
+
+
+For Debug Keystore:
+<com.google.android.maps.MapView
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:apiKey="0di1YhhG4iykMof50ZqMelW5k8zWgCBI1VwaPeg"
+                 />
+Its MD5 fingerprint is E0:F3:C7:B4:06:34:AE:2A:31:2C:17:9B:CC:60:EB:D1
